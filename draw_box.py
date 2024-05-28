@@ -98,7 +98,7 @@ if __name__ == '__main__':           # 只有在文件作为脚本文件直接�
               for _ in range(len(classes))]
 
     image_names = open(IMAGE_NAME_LIST_PATH).read(
-    ).strip().split()  # 得到不带后缀的图片名
+    ).strip().split('\n')  # 得到不带后缀的图片名
 
     box_total = 0
     image_total = 0
